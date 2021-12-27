@@ -45,47 +45,42 @@
     </header>
     <main class="bg-sp text-white">
         <div class="container-fluid">
-            <div class="row flex-nowrap">
-                <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
-                    <div
-                        class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-                        <div class="text-center">
-                            <i class="bi bi-person-bounding-box fs-2 mb-3 "></i>
-                            <h6 class="ms-1 d-none d-sm-inline">Administrador</h6>
-                        </div>
-
-                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
-                            id="menu">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link align-middle px-0">
-                                    <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Inicio</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="admin-menu.html" class="nav-link px-0 align-middle">
-                                    <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Gestión
-                                        de menús</span> </a>
-                            </li>
-                            <li>
-                                <a href="admin-pedidos.html" class="nav-link px-0 align-middle active px-3">
-                                    <i class="fs-4 bi-table"></i> <span
-                                        class="ms-1 d-none d-sm-inline">Pedidos</span></a>
-                            </li>
-                            <li>
-                                <a href="#submenu2"  class="nav-link px-0 align-middle ">
-                                    <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Gestión de
-                                        personal</span></a>
-                            </li>
-
-                            <a href="#" class="nav-link px-0 align-middle">
-                                <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Inventario</span>
-                            </a>
-                            </li>
-                        </ul>
-                        <hr>
-
-                    </div>
+          <div class="row flex-nowrap">
+            <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+              <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                <div class="text-center">
+                  <i class="bi bi-person-bounding-box fs-2 mb-3 "></i>
+                  <h6 class="ms-1 d-none d-sm-inline">Administrador</h6>
                 </div>
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                  <li class="nav-item">
+                    <a href="#" class="nav-link align-middle px-0">
+                      <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Inicio</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="admin-menu.html" class="nav-link px-0 align-middle">
+                      <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Gestión de menús</span> </a>
+                  </li>
+                  <li>
+                    <a href="admin-pedidos.html" class="nav-link active px-3 align-middle ">
+                      <i class="fs-4 bi-basket2"></i> <span class="ms-1 d-none d-sm-inline">Gestión de pedidos</span></a>
+                  </li>
+                  <li>
+                    <a href="admin-personal.html" class="nav-link px-0 align-middle ">
+                      <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Gestión de personal</span></a>
+                  <li>
+                    <a href="admin-inventario.html" class="nav-link px-0 align-middle ">
+                      <i class="fs-4 bi-box"></i> <span class="ms-1 d-none d-sm-inline">Gestión de Inventario</span> </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link px-0 align-middle">
+                      <i class="fs-4 bi-x-square"></i> <span class="ms-1 d-none d-sm-inline">Cerrar sesión</span> </a>
+                  </li>
+                </ul>
+                <hr>
+              </div>
+            </div>
                 <div class="col py-3 ">
                     <form class="row g-3">
                         <div class="col-md-6">
@@ -100,9 +95,21 @@
                         <div class="col-12">
                             <label for="inputAddress" class="form-label">Detalle de la orden</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="4">
-1x Cazuela de ave 
-2x Ensalada a la Chilena 
-1x Arroz con pollo</textarea>
+1x Cazuela de ave $10.000
+2x Ensalada a la Chilena $3.000 c/u
+1x Arroz con pollo $7.500</textarea> 
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputAddress" class="form-label">Total</label>
+                            <input type="text" class="form-control" id="inputAddress2"
+                            value="23.500">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputState" class="form-label">Estado del pedido</label>
+                            <select id="inputState" class="form-select">
+                                <option selected>Pagado</option>
+                                <option>Sin pagar</option>
+                            </select>
                         </div>
                         <div class="col-12">
                             <label for="inputAddress2" class="form-label">Comentarios</label>
@@ -118,7 +125,7 @@
                             <input type="text" class="form-control" id="inputZip" value="944332211">
                         </div>
                         <div class="col-md-4">
-                            <label for="inputState" class="form-label">Estado</label>
+                            <label for="inputState" class="form-label">Estado de la orden</label>
                             <select id="inputState" class="form-select">
                                 <option selected>En preparación</option>
                                 <option>En reparto</option>

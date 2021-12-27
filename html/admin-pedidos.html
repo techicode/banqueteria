@@ -44,45 +44,60 @@
           </nav>
     </header>
     <main class="bg-sp text-white">
-        <div class="container-fluid">
-            <div class="row flex-nowrap">
-                <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
-                    <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
-                        <div class="text-center">
-                            <i class="bi bi-person-bounding-box fs-2 mb-3 "></i>
-                            <h6 class="ms-1 d-none d-sm-inline">Administrador</h6>
-                        </div>
-
-                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link align-middle px-0">
-                                    <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Inicio</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="admin-menu.html"  class="nav-link px-0 align-middle">
-                                    <i class="fs-4 bi-speedometer2"></i> <span class="ms-1 d-none d-sm-inline">Gestión de menús</span> </a>
-                            </li>
-                            <li>
-                                <a href="#" class="nav-link px-0 align-middle active px-3">
-                                    <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Pedidos</span></a>
-                            </li>
-                            <li>
-                                <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
-                                    <i class="fs-4 bi-bootstrap"></i> <span class="ms-1 d-none d-sm-inline">Gestión de personal</span></a>
-                                
-                            </li>
-                           
-                                <a href="#" class="nav-link px-0 align-middle">
-                                    <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Inventario</span> </a>
-                            </li>
-                        </ul>
-                        <hr>
-
-                    </div>
-                </div>
+      <div class="container-fluid">
+        <div class="row flex-nowrap">
+          <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+              <div class="text-center">
+                <i class="bi bi-person-bounding-box fs-2 mb-3 "></i>
+                <h6 class="ms-1 d-none d-sm-inline">Administrador</h6>
+              </div>
+              <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+                <li class="nav-item">
+                  <a href="#" class="nav-link align-middle px-0">
+                    <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Inicio</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="admin-menu.html" class="nav-link px-0 align-middle">
+                    <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Gestión de menús</span> </a>
+                </li>
+                <li>
+                  <a href="admin-pedidos.html" class="nav-link active px-3 align-middle ">
+                    <i class="fs-4 bi-basket2"></i> <span class="ms-1 d-none d-sm-inline">Gestión de pedidos</span></a>
+                </li>
+                <li>
+                  <a href="admin-personal.html" class="nav-link px-0 align-middle ">
+                    <i class="fs-4 bi-people"></i> <span class="ms-1 d-none d-sm-inline">Gestión de personal</span></a>
+                <li>
+                  <a href="admin-inventario.html" class="nav-link px-0 align-middle ">
+                    <i class="fs-4 bi-box"></i> <span class="ms-1 d-none d-sm-inline">Gestión de Inventario</span> </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link px-0 align-middle">
+                    <i class="fs-4 bi-x-square"></i> <span class="ms-1 d-none d-sm-inline">Cerrar sesión</span> </a>
+                </li>
+              </ul>
+              <hr>
+            </div>
+          </div>
                 <div class="col py-3">
                     <h2>Gestión de pedidos</h2>
+                    <div class="row g-3 mt-2 pb-3 align-content-center">
+                      <div class="col-md-1">
+                          <div class="dropdown"> <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">Filtros </button>
+                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <li><a class="dropdown-item" href="#">ID</a></li>
+                                  <li><a class="dropdown-item" href="#">Nombre</a></li>
+                                  <li><a class="dropdown-item" href="#">Descripción</a></li>
+                                  <li><a class="dropdown-item" href="#">Precio</a></li>
+                                  <li><a class="dropdown-item" href="#">Disponibilidad</a></li>
+                                </ul>
+                          </div>
+                      </div>
+                      <div class="col-md-6"> <input type="text" class="form-control" placeholder="Ingrese el término a buscar"> </div>
+                      <div class="col-md-3"> <button class="btn btn-primary btn-block">Buscar</button> </div>
+                  </div>
                     <table class="table table-light">
                         <thead class="table-light">
                           <tr>
@@ -92,6 +107,7 @@
                             <th scope="col">Comentarios</th>
                             <th scope="col">Dirección</th>
                             <th scope="col">Contacto</th>
+                            <th scope="col">Estado de la orden</th>
                             <th scope="col">Estado del pedido</th>
                             <th scope="col">Acciones</th>
                           </tr>
@@ -108,6 +124,7 @@
                             <td>Calle falsa 321, pobl oasis</td>
                             <td>944332211</td>
                             <td>En preparación</td>
+                            <td>Pagado</td>
                             <td><a href="admin-pedidos-editar.html" class="btn btn-primary btn-sm" tabindex="-1" role="button" aria-disabled="true">Editar</a>
 
                                 <button type="button" class="btn btn-danger btn-sm">Cancelar</button>
@@ -124,6 +141,7 @@
                             <td>Calle falsa 321, pobl oasis</td>
                             <td>944332211</td>
                             <td>En preparación</td>
+                            <td>Pagado</td>
                             <td><button type="button" class="btn btn-primary btn-sm">Editar</button>
                                 <button type="button" class="btn btn-danger btn-sm">Cancelar</button>
                             </td>
@@ -139,6 +157,7 @@
                             <td>Calle falsa 321, pobl oasis</td>
                             <td>944332211</td>
                             <td>En preparación</td>
+                            <td>Sin pagar</td>
                             <td><button type="button" class="btn btn-primary btn-sm">Editar</button>
                                 <button type="button" class="btn btn-danger btn-sm">Cancelar</button>
                             </td>
@@ -166,7 +185,10 @@
             © 2021 La española, todos los derechos reservados.
         </div>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
