@@ -54,12 +54,12 @@
               </div>
               <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                 <li class="nav-item">
-                  <a href="admin.html" class="nav-link align-middle px-0">
+                  <a href="#" class="nav-link align-middle active px-3">
                     <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Inicio</span>
                   </a>
                 </li>
                 <li>
-                  <a href="admin-menu.html" class="nav-link active px-3 align-middle">
+                  <a href="admin-menu.html" class="nav-link px-0 align-middle">
                     <i class="fs-4 bi-table"></i> <span class="ms-1 d-none d-sm-inline">Gestión de menús</span> </a>
                 </li>
                 <li>
@@ -82,91 +82,86 @@
             </div>
           </div>
                 <div class="col py-3">
-                    <h2>Gestión de menús</h2>
-                    <div class="row g-3 mt-2 pb-3 align-content-center">
-                      <div class="col-md-1">
-                          <div class="dropdown"> <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">Filtros </button>
-                              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <li><a class="dropdown-item" href="#"># orden</a></li>
-                                  <li><a class="dropdown-item" href="#">Fecha y Hora</a></li>
-                                  <li><a class="dropdown-item" href="#">Detalle de orden</a></li>
-                                  <li><a class="dropdown-item" href="#">Estado de orden</a></li>
-                                  <li><a class="dropdown-item" href="#">Estado de pedido</a></li>
-                                </ul>
-                          </div>
+                    <h2>Inicio</h2>
+                  <div class="row ">
+                    <div class="col-md-6 col-12 pt-3">
+                      <div class="card text-center">
+                        <div class="card-header text-black">
+                          Ultimas alertas
+                        </div>
+                        <div class="card-body text-black-50">
+                          <ul>
+                            <li>Sin productos para <a href="#">Menu #4 Cazuela de pollo</a></li>
+                          </ul>
+                        </div>
                       </div>
-                      <div class="col-md-6"> <input type="text" class="form-control" placeholder="Ingrese el término a buscar"> </div>
-                      <div class="col-md-3"> <button class="btn btn-primary btn-block">Buscar</button> </div>
+                    </div>
+                    <div class="col-md-6 col-12 pt-3">
+                      <div class="card text-center">
+                        <div class="card-header text-black">
+                          Ultimos pedidos
+                        </div>
+                        <div class="card-body text-black-50">
+                          <ul>
+                            <li><a href="#">Pedido #3</a> Aceptado</li>
+                            <li><a href="#">Pedido #2</a>  En preparación</li>
+                            <li> <a href="#">Pedido #1</a>  En Reparto</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                    <table class="table table-light">
-                        <thead class="table-light">
-                          <tr>
-                            <th scope="col">ID</th>
-                            <th scope="col">Nombre</th>
-                            <th scope="col">Descripción</th>
-                            <th scope="col">Precio</th>
-                            <th scope="col" class="text-center">Disponibilidad</th>
-                            <th scope="col">Acción</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>1</td>
-                            <td>Pollo con papas</td>
-                            <td>Descripción del producto</td>
-                            <td>$6.990</td>
-                            <td class="text-center"><i class="bi bi-check-square green-check"></i></td>
-                            <td>
-                                <a href="admin-menu-editar.html" class="btn btn-primary btn-sm" tabindex="-1" role="button" aria-disabled="true">Editar</a>
-                                <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>2</td>
-                            <td>Ensalada a la Chilena</td>
-                            <td>Descripción del producto</td>
-                            <td>$4.990</td>
-                            <td class="text-center"><i class="bi bi-check-square green-check"></i></td>
-                            <td><button type="button" class="btn btn-primary btn-sm">Editar</button>
-                                <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>3</td>
-                            <td>Cazuela de vacuno</td>
-                            <td>Descripción del producto</td>
-                            <td >$8.990</td>
-                            <td class="text-center"><i class="bi bi-x-square red-check"></i>                            </td>
-                            <td><button type="button" class="btn btn-primary btn-sm">Editar</button>
-                                <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <button type="button" class="btn btn-primary btn-sm">Agregar Menú</button>
-                </div>
-            </div>
-        </div>
-        </main>
-    
-
-    <footer class="text-center text-white  oswald" style="background-color: #6b6b6b;">
-        <div class="container pt-4">
-            <section class="mb-4">
-                <p class="d-flex justify-content-center align-items-center">
-                    <i class="bi bi-geo-alt ms-5 me-2"></i> Calle Falsa #123, Villa Chica
-                    <i class="bi bi-telephone ms-5 me-2"></i> +569 987654321
-                    <i class="bi bi-envelope ms-5 me-2"></i> contacto@laespanola.cl
-
-                </p>
-
-            </section>
-        </div>
-
-        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2021 La española, todos los derechos reservados.
-        </div>
-    </footer>
+                  <div class="row mb-3">
+                    <div class="col-md-6 col-12 pt-3">
+                      <div class="card text-center">
+                        <div class="card-header text-black">
+                          Stock Crítico
+                        </div>
+                        <div class="card-body text-black-50">
+                          <ul>
+                            <li><a href="#">#5544 Lechuga</a> Sin stock</li>
+                            <li><a href="#">#440 Sal</a> 1 Kilo</li>
+                            <li><a href="#">#2 Pollo entero</a> 4 Kilos</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-12 pt-3">
+                      <div class="card text-center">
+                        <div class="card-header text-black">
+                          Pedidos pendientes de pago
+                        </div>
+                        <div class="card-body text-black-50">
+                          <ul>
+                            <li><a href="#">Pedido #5</a> Sin pagar</li>
+                            <li><a href="#">Pedido #6</a> Sin pagar</li>
+                            <li><a href="#">Pedido #7</a> Pago rechazado</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+</div>
+</div>
+</div>
+</main>
+<footer class="text-center text-white  oswald" style="background-color: #6b6b6b;">
+                    <div class="container pt-4">
+                        <section class="mb-4">
+                            <p class="d-flex justify-content-center align-items-center">
+                                <i class="bi bi-geo-alt ms-5 me-2"></i> Calle Falsa #123, Villa Chica
+                                <i class="bi bi-telephone ms-5 me-2"></i> +569 987654321
+                                <i class="bi bi-envelope ms-5 me-2"></i> contacto@laespanola.cl
+            
+                            </p>
+            
+                        </section>
+                    </div>
+            
+                    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                        © 2021 La española, todos los derechos reservados.
+                    </div>
+                </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
