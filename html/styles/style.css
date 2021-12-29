@@ -13,3 +13,43 @@
 .red-check {
     color: #ff0000;
 }
+
+.color {
+    color: #eb7b22 !important;
+}
+
+.bigger-icon {
+    font-size: 3em;
+}
+
+.color-50 {
+    color: #666c6e6b;
+}
+
+.btn-color {
+    background-color: #eb7b22;
+    border-color: #eb7b22;
+}
+
+.btn-color:hover {
+    background-color: #eb7b22;
+    border-color: #eb7b22;
+}
+
+.btn-color-nobg {
+    background-color: #ffffff00;
+    border-color: #eb7b22;
+}
+
+.a-color {
+    color: #eb7b22;
+    text-emphasis-color: #eb7b22;
+}
+
+.price {
+    font-size: 2em;
+}
+
+.descripcion {
+    color: #dbdbdb;
+}
